@@ -43,4 +43,8 @@ class Inicio extends CI_Controller {
 	{
 		$this->load->view('choferdform');
 	}
+	public function viajesvirtual()
+	{
+		$this->load->view('viajesvirtual');
+	}
 }

@@ -18,8 +18,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
            <nav>
              <ul>
                <li><a href="<?=base_url();?>Inicio/verchofer" target="zona"><span class="dos"><i class="icon icon-envelop"></i>Informe - Choferes</a></li>
-               <li><a href="inicio.html" target="zona"><span class="uno"><i class="icon icon-home"></i>Inicio</a></li>
-               <li><a href="viajesvirtual.php" target="zona"><span class="cuatro"><i class="icon icon-mobile"></i>Servicio - Clientes</a></li>
+               <li><a href="<?=base_url();?>Inicio/inicios" target="zona"><span class="uno"><i class="icon icon-home"></i>Inicio</a></li>
+               <li><a href="<?=base_url();?>Inicio/viajesvirtual" target="zona"><span class="cuatro"><i class="icon icon-mobile"></i>Servicio - Clientes</a></li>
              </ul>
            </nav>
          </header>
