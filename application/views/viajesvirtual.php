@@ -39,7 +39,7 @@
                     ?>
                     <tr><td><?=$f[1]?>
                         <td align="center"><img src="<?=base_url();?>plantilla/turismo/<?=$f[1]?>.jpg" height="200" width="350">
-                        <td class="unos"><a href="controlar.php?cod=<?=$f[0]?>&x=<?=$f[1]?>">
+                        <td class="unos"><a href="<?=base_url();?>Inicio/controlar/<?=$f[0]?>/<?=$f[1]?>">
                             <input type="submit" value="--VER--"></a>
                     <?php
                         }
