@@ -6,27 +6,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Proyecto Aaron</title>
-  <link href ="css/slide.css" rel ="stylesheet" type ="text/css">
-  <link href ="css/inicio.css" rel ="stylesheet" type ="text/css">
+  <link href ="<?=base_url();?>/plantilla/css/slide.css" rel ="stylesheet" type ="text/css">
+  <link href ="<?=base_url();?>/plantilla/css/inicio.css" rel ="stylesheet" type ="text/css">
 </head>
 <body bgcolor="#ED1A24">
   <center>
   <table class="peru">
-      <tr><td><img src="imagen/logo1.jpg">
-          <td><img src="imagen/logo.png">
+      <tr><td><img src="<?=base_url();?>/plantilla/imagen/logo1.jpg">
+          <td><img src="<?=base_url();?>/plantilla/imagen/logo.png">
   </table>
   <div class="main">
         <div class="slides">
-            <img src="fondos/fondo1.jpg" alt="">
-            <img src="fondos/fondo2.jpg" alt="">
-            <img src="fondos/fondo3.jpg" alt="">
-            <img src="fondos/fondo4.jpg" alt="">
-            <img src="fondos/fondo5.jpg" alt="">
-            <img src="fondos/fondo6.jpg" alt="">
+            <img src="<?=base_url();?>/plantilla/fondos/fondo1.jpg" alt="">
+            <img src="<?=base_url();?>/plantilla/fondos/fondo2.jpg" alt="">
+            <img src="<?=base_url();?>/plantilla/fondos/fondo3.jpg" alt="">
+            <img src="<?=base_url();?>/plantilla/fondos/fondo4.jpg" alt="">
+            <img src="<?=base_url();?>/plantilla/fondos/fondo5.jpg" alt="">
+            <img src="<?=base_url();?>/plantilla/fondos/fondo6.jpg" alt="">
         </div>
     </div>
-  <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
-  <script src="js/jquery.slides.js" type="text/javascript"></script>
+  <script src="<?=base_url();?>/plantilla/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+  <script src="<?=base_url();?>/plantilla/js/jquery.slides.js" type="text/javascript"></script>
   <script>
         $(function(){
         $(".slides").slidesjs({
