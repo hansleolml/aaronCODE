@@ -47,8 +47,21 @@ class Inicio extends CI_Controller {
 	{
 		$this->load->view('viajesvirtual');
 	}
-	public function controlar()
+	public function controlar($code,$nome)
 	{
-		$this->load->view('controlar');
+		$data = array(
+        'elsaludo' => $code,
+				'elsaludos' => $nome,
+		);
+		$this->load->view('controlar',$data);
 	}
+	public function nuevopasajero()
+	{
+		$this->load->view('nuevopasajero');
+	}
+	public function adicionpasajero()
+	{
+		$this->load->view('adicionpasajero');
+	}
+
 }

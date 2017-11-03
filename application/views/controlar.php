@@ -1,9 +1,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/control.css">
-        <link rel="stylesheet" type="text/css" href="css/pasajero.css">
-        <link href ="css/slides.css" rel ="stylesheet" type ="text/css">
+        <link rel="stylesheet" type="text/css" href="<?=base_url();?>plantilla/css/control.css">
+        <link rel="stylesheet" type="text/css" href="<?=base_url();?>plantilla/css/pasajero.css">
+        <link href ="<?=base_url();?>plantilla/css/slides.css" rel ="stylesheet" type ="text/css">
         <title>Control</title>
     </head>
     <?php
@@ -16,8 +16,8 @@
 
         $cn=mysqli_connect($host_db, $user_db, $pass_db, $db_name);
 
-        $coda=$_GET["cod"];
-        $nom=$_GET["x"];
+        $coda=$elsaludo;
+        $nom=$elsaludos;
     ?>
     <body>
         <center>
@@ -28,7 +28,7 @@
 
             <table>
             <div class="operacion">
-                <form action ="nuevopasajero.html" method= "POST">
+                <form action ="<?=base_url();?>inicio/nuevopasajero" method= "POST">
                  <p>
                  <fieldset>
                  <legend>OPERACIONES - COSTO</legend>
@@ -42,10 +42,10 @@
             <table>
                 <div class="main">
                     <div class="slides">
-                        <img src="fondos/arequipa1.jpg" alt="">
-                        <img src="fondos/arequipa2.jpg" alt="">
-                        <img src="fondos/arequipa3.jpg" alt="">
-                        <img src="fondos/arequipa4.jpg" alt="">
+                        <img src="<?=base_url();?>plantilla/fondos/arequipa1.jpg" alt="">
+                        <img src="<?=base_url();?>plantilla/fondos/arequipa2.jpg" alt="">
+                        <img src="<?=base_url();?>plantilla/fondos/arequipa3.jpg" alt="">
+                        <img src="<?=base_url();?>plantilla/fondos/arequipa4.jpg" alt="">
                     </div>
                 </div>
             </table>
@@ -66,8 +66,8 @@
               </table>
         </center>
     </body>
-    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="js/jquery.slides.js" type="text/javascript"></script>
+    <script src="<?=base_url();?>plantilla/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="<?=base_url();?>plantilla/js/jquery.slides.js" type="text/javascript"></script>
     <script>
       $(function(){
       $(".slides").slidesjs({
