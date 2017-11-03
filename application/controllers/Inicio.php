@@ -19,4 +19,28 @@ class Inicio extends CI_Controller {
 	{
 		$this->load->view('inicio');
 	}
+	public function nuevochoferht()
+	{
+		$this->load->view('nuevochofer.php');
+	}
+	public function nuevochofer2()
+	{
+		$this->load->view('nuevochofer2.php');
+	}
+	public function nuevochofer2d()
+	{
+		$this->load->view('nuevochofer2de.php');
+	}
+	public function verchoferr()
+	{
+		$this->load->view('verchoferr');
+	}
+	public function nuevochofer()
+	{
+		$this->load->view('nuevochofer');
+	}
+	public function choferdform()
+	{
+		$this->load->view('choferdform');
+	}
 }

@@ -1,3 +1,6 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -22,15 +25,13 @@
             </table>
             <table>
             <div class="operacion">
-                <form action ="nuevochofer.html" method= "POST">
                     <p>
                     <fieldset>
                         <legend>OPERACIONES - INGRESO</legend>
-                        <p>INGRESO DE CHOFERES <input type="submit" value="--Adicionar--"></p>
-                        <p>SALIDA DE CHOFERES <input type="submit" value="--Eliminar--"></p>
+                        <p>INGRESO DE CHOFERES <a href="<?=base_url();?>Inicio/nuevochoferht">AÑADIR</a></p>
+                        <p>SALIDA DE CHOFERES <a href="<?=base_url();?>Inicio/choferdform">ELIMINAR</a></p>
                         <p>
                     </fieldset>
-                </form>
             </div>
             </table>
 
@@ -42,7 +43,9 @@
                     while($f= mysqli_fetch_array($res)){  //lee fila pór fila
                     ?>
                 <tr><td><?=$f[0]?><td><?=$f[1]?><td><?=$f[2]?><td><?=$f[3]?>
-                    <td><a href="verchoferr.php?cod=<?=$f[0]?>&x=<?=$f[1]?>"><input type="submit" value="--Ver--"></a>
+
+                    <!--<td><a href="verchoferr.php?cod=<?=$f[0]?>&x=<?=$f[1]?>"><input type="submit" value="--Ver--"></a>-->
+                    <td><a href="<?=base_url();?>Inicio/verchoferr/<?=$f[0]?>/<?=$f[1]?><?=$f[2]?>/<?=$f[3]?>"><input type="submit" value="--Ver--"></a>
                     <?php
                     }
                     ?>
