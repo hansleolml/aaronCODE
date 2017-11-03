@@ -12,7 +12,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         $user_db = "root";
         $pass_db = "";
         $db_name = "bdviajes";
-        $tbl_name = "respuestas";
 
 
         $cn=mysqli_connect($host_db, $user_db, $pass_db, $db_name);
@@ -45,7 +44,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <tr><td><?=$f[0]?><td><?=$f[1]?><td><?=$f[2]?><td><?=$f[3]?>
 
                     <!--<td><a href="verchoferr.php?cod=<?=$f[0]?>&x=<?=$f[1]?>"><input type="submit" value="--Ver--"></a>-->
-                    <td><a href="<?=base_url();?>Inicio/verchoferr/<?=$f[0]?>/<?=$f[1]?><?=$f[2]?>/<?=$f[3]?>"><input type="submit" value="--Ver--"></a>
+                    <td><a href="<?=base_url();?>Inicio/verchoferr/<?=$f[0]?>/<?=$f[1]?>"><input type="submit" value="--Ver--"></a>
                     <?php
                     }
                     ?>

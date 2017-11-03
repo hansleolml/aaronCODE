@@ -31,9 +31,13 @@ class Inicio extends CI_Controller {
 	{
 		$this->load->view('nuevochofer2de.php');
 	}
-	public function verchoferr()
+	public function verchoferr($coda,$nome)
 	{
-		$this->load->view('verchoferr');
+		$data = array(
+        'elsaludo' => $coda,
+				'elsaludos' => $nome,
+		);
+		$this->load->view('verchoferr',$data);
 	}
 	public function nuevochofer()
 	{

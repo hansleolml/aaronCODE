@@ -1,14 +1,18 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/pasajero.css">
+        <link rel="stylesheet" type="text/css" href="<?=base_url();?>plantilla/css/pasajero.css">
         <title>Trabajadores</title>
     </head>
     <?php
-        $cn=@mysql_connect("localhost","root","");
-        mysql_select_db("bdviajes",$cn);
-        $coda=$_GET["cod"];
-        $nom=$_GET["x"];
+    $host_db = "localhost";
+    $user_db = "root";
+    $pass_db = "";
+    $db_name = "bdviajes";
+    $coda=$elsaludo;
+    $nom=$elsaludos;
+
+    $cn=mysqli_connect($host_db, $user_db, $pass_db, $db_name);
     ?>
     <body>
         <center>
@@ -20,11 +24,11 @@
             <table class="ver">
                 <tr><th>Viaje<th>Fecha<th>Ruta<th>Pago
                     <?php
-                    $sql="select c.vianro, viafch, rutnom, pago_cho from viaje c"
-                    . ", ruta n where c.rutcod=n.rutcod and idcod='$coda' ";
-                    $res=  mysql_query($sql) or die(mysql_error());
+                    $sql="select VIANRO, VIAFCH, VIAHRS, COSVIA from viaje";
+                    // . ", ruta n where c.rutcod=n.rutcod and idcod='$coda' ";
+                    $res= mysqli_query($cn,$sql)  or die('Error:'.mysqli_error());
                     $sum=0;
-                    while($f=mysql_fetch_array($res)){
+                    while($f=mysqli_fetch_array($res)){
                     $sum=$sum+$f[3];
                     ?>
                     <tr><td><?=$f[0]?><td><?=$f[1]?><td><?=$f[2]?><td><?=$f[3]?>
