@@ -6,9 +6,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <head>
     <meta charset="utf-8">
     <title>TODO supply a title</title>
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href ="css/navegacion.css" rel ="stylesheet" type ="text/css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url();?>/plantilla/css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url();?>/plantilla/css/style.css">
+    <link href ="<?=base_url();?>/plantilla/css/navegacion.css" rel ="stylesheet" type ="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
